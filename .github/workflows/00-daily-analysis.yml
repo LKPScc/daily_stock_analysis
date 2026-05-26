@@ -39,10 +39,10 @@ jobs:
         run: sleep $((RANDOM % 60))  # 随机延迟0-60秒启动
       
       - name: 检出代码
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
       
       - name: 设置 Python 环境
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
